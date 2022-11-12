@@ -1,13 +1,13 @@
 import {createSlice} from '@reduxjs/toolkit';
 
 const cartSlice = createSlice({
-  name: 'products',
+  name: 'users',
   initialState: {
-    products: [],
+    users: [],
   },
   reducers: {
-    addProduct(state, action) {
-      state.products.push({
+    addUser(state, action) {
+      state.users.push({
         id: action.payload.id,
         image: action.payload.image,
         available: action.payload.available,
@@ -17,8 +17,8 @@ const cartSlice = createSlice({
         description: action.payload.description,
       });
     },
-    removeProduct(state, action) {
-      state.products = state.products.filter(
+    removeUser(state, action) {
+      state.users = state.users.filter(
         item => item.id !== action.payload.id,
       );
     },

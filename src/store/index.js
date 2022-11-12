@@ -10,10 +10,10 @@ import {
   REGISTER,
 } from 'redux-persist';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import cartReducer from './cartReducer';
+import userReducer from './userReducer';
 
 const rootReducer = combineReducers({
-  products: cartReducer,
+  users: userReducer,
 });
 
 const persistConfig = {
