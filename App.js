@@ -1,26 +1,27 @@
 import React from 'react';
-import { Dimensions, SafeAreaView, ScrollView, StyleSheet, Text, View } from "react-native";
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Home from './src/screens/Home';
+import UserInfo from './src/screens/UserInfo';
+import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
+import store, {persistor} from './src/store';
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <View style={[styles.container]}>
-        <Text style={[styles.text]}>Smagia</Text>
-      </View>
-    </SafeAreaView>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <NavigationContainer>
+          <Stack.Navigator initialRouteName="Home">
+            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="UserInfo" component={UserInfo} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </PersistGate>
+    </Provider>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    minHeight: Dimensions.get('window').height,
-  },
-  text: {
-    fontFamily: 'OpenSans-Bold',
-    fontSize: 36,
-  },
-});
 
 export default App;

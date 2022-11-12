@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* smagiaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* smagiaTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-smagia.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-smagia.a */; };
+		0F10DEDEB9BA4ADE8A25D536 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E66C540403D4B57AAE5B837 /* OpenSans-Regular.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-smagia-smagiaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-smagia-smagiaTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D6D0041623AD44768ED2F561 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E08C26A1B59943D7A9637661 /* OpenSans-Bold.ttf */; };
-		0F10DEDEB9BA4ADE8A25D536 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E66C540403D4B57AAE5B837 /* OpenSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,11 +43,11 @@
 		5709B34CF0A7D63546082F79 /* Pods-smagia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smagia.release.xcconfig"; path = "Target Support Files/Pods-smagia/Pods-smagia.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-smagia-smagiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smagia-smagiaTests.debug.xcconfig"; path = "Target Support Files/Pods-smagia-smagiaTests/Pods-smagia-smagiaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-smagia.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-smagia.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E66C540403D4B57AAE5B837 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = smagia/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-smagia-smagiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smagia-smagiaTests.release.xcconfig"; path = "Target Support Files/Pods-smagia-smagiaTests/Pods-smagia-smagiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E08C26A1B59943D7A9637661 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		E08C26A1B59943D7A9637661 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; name = "OpenSans-Bold.ttf"; path = "../assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6E66C540403D4B57AAE5B837 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; name = "OpenSans-Regular.ttf"; path = "../assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +98,16 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = smagia;
+			sourceTree = "<group>";
+		};
+		2A353DB7A0CD4E32B0BA5E6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E08C26A1B59943D7A9637661 /* OpenSans-Bold.ttf */,
+				6E66C540403D4B57AAE5B837 /* OpenSans-Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -152,16 +162,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		2A353DB7A0CD4E32B0BA5E6B /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				E08C26A1B59943D7A9637661 /* OpenSans-Bold.ttf */,
-				6E66C540403D4B57AAE5B837 /* OpenSans-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
