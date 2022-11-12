@@ -1,11 +1,15 @@
 import React from "react";
-import { Dimensions, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Button, Dimensions, SafeAreaView, StyleSheet, Text, View } from "react-native";
 
-const UserInfo = () => {
+const UserInfo = ({navigation}) => {
   return (
     <SafeAreaView>
       <View style={[styles.container]}>
-        <Text style={[styles.text]}>User info</Text>
+        <Text style={[styles.text]}>User info screen</Text>
+        <Button
+          title="Go to Details"
+          onPress={() => navigation.navigate('UserInfo')}
+        />
       </View>
     </SafeAreaView>
   );

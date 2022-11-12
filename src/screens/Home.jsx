@@ -8,7 +8,7 @@ const Home = ({navigation}) => {
         <Text style={[styles.text]}>Home screen</Text>
         <Button
           title="Go to Details"
-          onPress={() => navigation.navigate('UserInfo')}
+          onPress={() => navigation.navigate('UserList')}
         />
       </View>
     </SafeAreaView>
